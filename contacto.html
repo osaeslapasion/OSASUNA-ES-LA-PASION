@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #15065c;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background-color: #C8102E; /* Rojo Osasuna */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #001A4D; /* Azul oscuro */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Reset general de márgenes y padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Colores principales */
+    :root {
+      --red: #c80000;
+      --dark-blue: #1e1f5a;
+      --white: #ffffff;
+    }
+
+    /* Estilo del cuerpo */
+    body {
+      background-color: var(--dark-blue);
+      background-image: url('ruta/de/tu/imagen-de-fondo.jpg'); /* Imagen de fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      padding-top: 140px; /* Espacio para la cabecera fija */
+    }
+
+    /* Contenedor principal */
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      background-color: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    /* Cabecera fija */
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--red);
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 10;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Contenedor del logotipo y título */
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .header img {
+      height: 50px;
+      width: auto;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      color: var(--white);
+    }
+
+    /* Barra de navegación */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--dark-blue);
+    }
+
+    /* Sección de noticias */
+    .news-section {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    /* Tarjeta de noticia */
+    .news-card {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      border: 1px solid var(--dark-blue);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .news-card:hover {
+      transform: scale(1.02);
+    }
+
+    /* Imagen de la noticia */
+    .news-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    /* Contenido de la noticia */
+    .news-content {
+      padding: 20px;
+      background-color: var(--white);
+      color: var(--dark-blue);
+    }
+
+    .news-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--red);
+    }
+
+    .news-description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Botón de leer más */
+    .read-more {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: var(--dark-blue);
+      color: var(--white);
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .read-more:hover {
+      background-color: var(--red);
+    }
+    </style>
+</head>
+<body>
+    <!-- Cabecera fija con logotipo, título centrado y enlaces debajo -->
+    <header class="header">
+      <div class="header-content">
+        <img src="imagenes/logotipo.png" alt="Logotipo"> <!-- Imagen del logotipo -->
+        <h1><font face="verdana" size="5">OSASUNA ES LA PASION | contacto</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">INICIO</a>
+        <a href="https://www.instagram.com/osasuna.es.la.pasion/">INSTAGRAM</a>
+        <a href="https://www.osasuna.es/">OSASUNA</a>
+          <a href="contacto.html">CONTACTO</a>
+      </div>
+    </header>
+  
+    <div class="container">
+        <font color="black"> <h1>Contacto</h1>
+        <p>Email: <a href="mailto:osasunaeslapasion@gmail.com">osasunaeslapasion@gmail.com</a></p>
+        <p>
+            Síguenos en Instagram: 
+            <a href="https://www.instagram.com/osasuna.es.la.pasion/" target="_blank">@osasuna.es.la.pasion</a>
+        </font></p>
+    </div>
+</body>
+</html>
